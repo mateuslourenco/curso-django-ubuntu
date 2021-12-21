@@ -28,3 +28,6 @@ jobs:
     - name: Lint with flake8
       run: |
         pipenv run flake8 .
+    - name: Tests with pytest-django
+      run: |
+        pipenv run pytest
