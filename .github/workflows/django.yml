@@ -28,6 +28,11 @@ jobs:
     - name: Lint with flake8
       run: |
         pipenv run flake8 .
-    - name: Tests with pytest-django
+    - name: Tests with pytest-django and cov
       run: |
-        pipenv run pytest
+        pipenv run pytest --cov=pypro
+    - name: Posting Coverage
+      env:
+        super_secret: ${{ secrets.CODECOV_TOKEN }}
+      run: |
+        pipenv run codecov
