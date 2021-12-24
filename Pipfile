@@ -11,6 +11,7 @@ python-decouple = "*"
 dj-database-url = "*"
 django-s3-folder-storage = "*"
 psycopg2-binary = "*"
+collectfast = "*"
 
 [dev-packages]
 flake8 = "*"
