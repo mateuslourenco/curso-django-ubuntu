@@ -20,24 +20,24 @@
 
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-<div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+    </div>
+</nav>
+<div class="container">
     <div class="row">
         <div class="col-md-12">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-                </div>
-            </nav>
             <div class="jumbotron">
                 <h2>
                     Curso de Python com Luciano Ramalho
@@ -72,7 +72,28 @@
         </div>
     </div>
 </div>
-
-
+<footer class="main-footer mt-5 pt-4 text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Entre em contato</h3>
+                <address>
+                    +55 12 99741-1854
+                    <br>
+                    <a href="mailto:ramalho@python.pro.br" class="text-light">ramalho@python.pro.br</a>
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="rights pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {% now 'Y' %} Python Pro. Todos direitos reservados
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
