@@ -2,6 +2,8 @@ DEBUG = False
 SECRET_KEY = defina sua chave secreta
 DATABASE_URL = postgres://postgres:postgres@localhost/postgres:5434/cursodjango_database
 
+ALLOWED_HOSTS=localhost, 127.0.0.1
+
 # Configurações AWS
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
