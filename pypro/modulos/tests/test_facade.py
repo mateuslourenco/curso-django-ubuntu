@@ -1,4 +1,3 @@
-from django.db import models
 from model_mommy import mommy
 import pytest
 
