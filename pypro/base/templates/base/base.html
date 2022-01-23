@@ -44,7 +44,11 @@
                 </div>
             </li>
         </ul>
+        {% if user.is_authenticated %}
+
+        {% else %}
         <a href="{% url 'login' %}" class="btn btn-light my-2">Entrar</a>
+        {% endif %}
     </div>
 </nav>
 {% block body %} {% endblock body %}
