@@ -43,6 +43,11 @@ LOGIN_URL = 'login'
 # Application definition
 
 INSTALLED_APPS = [
+    'pypro.base',
+    'pypro.aperitivos',
+    'pypro.modulos',
+    'pypro.turmas',
+    'ordered_model',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,11 +55,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'collectfast',
     'django.contrib.staticfiles',
-    'pypro.base',
-    'pypro.aperitivos',
-    'pypro.modulos',
-    'pypro.turmas',
-    'ordered_model',
     'django_extensions',
 ]
 
