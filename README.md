@@ -1,7 +1,7 @@
 # curso-django-ubuntu
 Código desenvolvido no módulo de Django do [Site Python Pro](https://www.python.pro.br)
 Projeto refeito utilizando SO Ubuntu
-### Projeto original feito com Windows: [Curso Django](https://github.com/mateuslourenco/curso-django)
+### Projeto original feito com Windows: [Curso Django](https://github.com/mateuslourenco/curso-django-antigo)
 
 Projeti disponível em https://pythondjangomu.herokuapp.com/
 
