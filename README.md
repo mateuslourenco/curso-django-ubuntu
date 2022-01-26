@@ -1,4 +1,4 @@
-# curso-django-ubuntu
+# Curso Django
 Código desenvolvido no módulo de Django do [Site Python Pro](https://www.python.pro.br)
 
 Projeti disponível em https://pythondjangomu.herokuapp.com/
