@@ -429,11 +429,10 @@
         },
         "setuptools": {
             "hashes": [
-                "sha256:2404879cda71495fc4d5cbc445ed52fdaddf352b36e40be8dcc63147cb4edabe",
-                "sha256:68eb94073fc486091447fcb0501efd6560a0e5a1839ba249e5ff3c4c93f05f90"
+                "sha256:1bc2725f0b4d6eb054ee29a0e05fda9c7c0921a6bdc0cf6dd2204da746872b49",
+                "sha256:71b2b3a334d6fcd2e472fb18d0ff530dc585d62da1494e75d001058f33153257"
             ],
-            "markers": "python_version >= '3.7'",
-            "version": "==60.5.0"
+            "version": "==60.9.1"
         },
         "six": {
             "hashes": [
