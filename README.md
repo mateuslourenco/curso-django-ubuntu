@@ -1,4 +1,4 @@
-# Curso Django
+# Django
 Código desenvolvido no módulo de Django do [Site Python Pro](https://www.python.pro.br)
 
 Projeto disponível em https://pythondjangomu.herokuapp.com/
