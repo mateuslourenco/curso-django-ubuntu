@@ -8,6 +8,8 @@ Projeto disponível em https://pythondjangomu.herokuapp.com/
 [![Python 3](https://pyup.io/repos/github/mateuslourenco/django/python-3-shield.svg)](https://pyup.io/repos/github/mateuslourenco/django/)
 [![codecov](https://codecov.io/gh/mateuslourenco/django/branch/main/graph/badge.svg?token=XGBKVRNKJQ)](https://codecov.io/gh/mateuslourenco/django)
 
+## Descrição
+Neste projeto, foi desenvolvido uma plataforma de cursos online, nesta plataforma, é possível cadastrar módulos do curso, indicando qual é o publíco alvo, uma descrição do módulo e adicionar as aulas disponíveis
 
 ## Como rodar o projeto
 
@@ -25,6 +27,6 @@ python -m pip install pipenv
 pipenv sync --dev
 cp contrib/env-sample .env
 docker-compose up
-python manage.py migrate
-python manage.py runserver
+pipenv run python manage.py migrate
+pipenv run python manage.py runserver
 ```
