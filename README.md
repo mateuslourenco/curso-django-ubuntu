@@ -51,8 +51,9 @@ pipenv sync
 cp contrib/env-sample .env
 docker-compose up -d
 pipenv run python manage.py migrate
-pipenv run python manage.py runserver
+pipenv run python manage.py runserver --insecure
 ```
+Outra alternativa para rodar localmente, é atualizar a variável de ambiente no arquivo DEBUG no arquivo .env para True
 
 ## Como adicionar um novo módulo
 
