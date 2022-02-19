@@ -34,7 +34,7 @@ Neste projeto, foi desenvolvido uma plataforma de cursos online, nesta plataform
 - layoutit
 - bootstrap v4.2.1 
 
-## Como rodar o projeto
+## Como rodar o projeto localmente
 
 - Clone esse repositório
 - Instale o pipenv 
