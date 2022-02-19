@@ -47,9 +47,9 @@ Neste projeto, foi desenvolvido uma plataforma de cursos online, nesta plataform
 git clone https://github.com/mateuslourenco/django.git
 cd django
 python -m pip install pipenv
-pipenv sync --dev
+pipenv sync
 cp contrib/env-sample .env
-docker-compose up
+docker-compose up -d
 pipenv run python manage.py migrate
 pipenv run python manage.py runserver
 ```
