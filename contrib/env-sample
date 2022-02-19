@@ -1,6 +1,6 @@
-DEBUG = False
-SECRET_KEY = defina sua chave secreta
-DATABASE_URL = postgres://postgres:postgres@localhost/postgres:5434/cursodjango_database
+DEBUG=True
+SECRET_KEY=defina sua chave secreta
+DATABASE_URL=postgres://pythonpro:pythonpro@localhost:5432/cursodjango
 
 ALLOWED_HOSTS=localhost, 127.0.0.1
 
