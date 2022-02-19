@@ -1,19 +1,16 @@
-version: "3.3"Modelos do Django
-
-
-
+version: "3.3"
 
 services:
   database:
-    container_name: cursodjango
+    container_name: cursodjango_database
     image: postgres
     restart: always
     volumes:
       - ./.pgdata:/var/lib/postgresql/data
     environment:
       - LC_ALL=C.UTF-8
-      - POSTGRES_PASSWORD=pythonpro
-      - POSTGRES_USER=pythonpro
-      - POSTGRES_DB=cursodjango
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=cursodjango_database
     ports:
-      - 5434:5432
+      - 5432:5432
