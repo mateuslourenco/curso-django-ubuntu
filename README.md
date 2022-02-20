@@ -9,8 +9,14 @@ Projeto disponível em https://pythondjangomu.herokuapp.com/
 [![codecov](https://codecov.io/gh/mateuslourenco/django/branch/main/graph/badge.svg?token=XGBKVRNKJQ)](https://codecov.io/gh/mateuslourenco/django)
 
 ## Descrição
-Neste projeto, foi desenvolvido uma plataforma de cursos online, nesta plataforma, é possível cadastrar módulos do curso, indicando qual é o publíco alvo, uma descrição do módulo e adicionar as aulas disponíveis. As aulas aceitam vídeos cadastrados na plataforma vimeo
+Neste projeto, foi desenvolvido uma plataforma de cursos online(SaaS), nesta plataforma, é possível cadastrar módulos do curso, indicando qual é o publíco alvo, uma descrição do módulo e adicionar as aulas disponíveis. As aulas aceitam vídeos cadastrados na plataforma vimeo.
 
+O projeto seguiu as boas praticas da metodologia Twelve-Factor App.
+ - Foi utilizado Git com feature branch, implementado processo de CI com GitHub Action e Heroku
+ - Utilizado pipenv para isolar e declarar dependencias
+ - Foi utilizado o python-decouple para desaclopar configurações e salvar no arquivo .env ou em variaves de ambiente
+ - Foi utilizado sentry para monitorar erros
+ - Os processos de linter, tests e builds foram separados 
 ## Tecnologias usadas
 - python
 - django
