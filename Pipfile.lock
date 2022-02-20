@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "12875de5de09c60b7178e97a9c8f92e210bdfabf9020dc9dd7f4b44e1cecc7ac"
+            "sha256": "858c1e59d9911b8624f4a3a7893200a52e5aab4dd804d8c07bf9693595f7a461"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -138,14 +138,6 @@
             "index": "pypi",
             "version": "==4.0.2"
         },
-        "django-debug-toolbar": {
-            "hashes": [
-                "sha256:644bbd5c428d3283aa9115722471769cac1bec189edf3a0c855fd8ff870375a9",
-                "sha256:6b633b6cfee24f232d73569870f19aa86c819d750e7f3e833f2344a9eb4b4409"
-            ],
-            "index": "pypi",
-            "version": "==3.2.4"
-        },
         "django-extensions": {
             "hashes": [
                 "sha256:28e1e1bf49f0e00307ba574d645b0af3564c981a6dfc87209d48cb98f77d0b1a",
@@ -281,6 +273,7 @@
                 "sha256:7535e70dfa32e84d4b34996ea99c5e432fa29a708d0f4e394bbcb2a8faa4f16d",
                 "sha256:bcae7cab893c2d310a711b70b24efb93334febe65f8de776ee320b517471e227"
             ],
+            "markers": "python_version >= '3.7'",
             "version": "==2.5.1"
         },
         "pluggy": {
@@ -614,6 +607,14 @@
             "index": "pypi",
             "version": "==4.0.2"
         },
+        "django-debug-toolbar": {
+            "hashes": [
+                "sha256:644bbd5c428d3283aa9115722471769cac1bec189edf3a0c855fd8ff870375a9",
+                "sha256:6b633b6cfee24f232d73569870f19aa86c819d750e7f3e833f2344a9eb4b4409"
+            ],
+            "index": "pypi",
+            "version": "==3.2.4"
+        },
         "flake8": {
             "hashes": [
                 "sha256:479b1304f72536a55948cb40a32dce8bb0ffe3501e26eaf292c7e60eb5e0428d",
@@ -639,10 +640,10 @@
         },
         "mccabe": {
             "hashes": [
-                "sha256:348e0240c33b60bbdf4e523192ef919f28cb2c3d7d5c7794f74009290f236325",
-                "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e"
+                "sha256:ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42",
+                "sha256:dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"
             ],
-            "version": "==0.7.0"
+            "version": "==0.6.1"
         },
         "model-mommy": {
             "hashes": [
