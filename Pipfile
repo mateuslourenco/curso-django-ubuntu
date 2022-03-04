@@ -21,8 +21,8 @@ django-extensions = "*"
 flake8 = "*"
 pytest-cov = "*"
 codecov = "*"
-model-mommy = "*"
 django-debug-toolbar = "*"
+model-bakery = "*"
 
 [requires]
 python_version = "3.9"
