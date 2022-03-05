@@ -28,8 +28,8 @@ O projeto seguiu as boas praticas da metodologia Twelve-Factor App.
 - Rode as migrações
 
 ```
-git clone https://github.com/mateuslourenco/django.git
-cd django
+git clone https://github.com/mateuslourenco/curso-django
+cd curso-django
 python -m pip install pipenv
 pipenv sync -d
 cp contrib/env-sample .env
