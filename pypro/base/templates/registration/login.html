@@ -4,20 +4,6 @@
 {% block title %}Python Pro - Login{% endblock title %}
 {% block body %}
 <div class="container text-center mt-3">
-
-    <!--            {% if form.errors %}-->
-    <!--            <p>Your username and password didn't match. Please try again.</p>-->
-    <!--            {% endif %}-->
-
-    <!--            {% if next %}-->
-    <!--            {% if user.is_authenticated %}-->
-    <!--            <p>Your account doesn't have access to this page. To proceed,-->
-    <!--                please login with an account that has access.</p>-->
-    <!--            {% else %}-->
-    <!--            <p>Please login to see this page.</p>-->
-    <!--            {% endif %}-->
-    <!--            {% endif %}-->
-
     <form method="post" action="{% url 'login' %}">
         {% csrf_token %}
         <div class="row">
@@ -31,6 +17,9 @@
                     <button type="submit" class="btn btn-block btn-success mt-2">Entrar</button>
                     <input type="hidden" name="next" value="{{ next }}">
 
+                </div>
+                <div>
+                    <a type="button" class="btn btn-block btn-primary mt-2" href="{% url 'base:registrar' %}">Registre-se</a>
                 </div>
                 {% if form.errors %}
                 <div class="alert alert-danger mt-2">Seu usuário e senha não combinam. Por favor, tente novamente</div>
