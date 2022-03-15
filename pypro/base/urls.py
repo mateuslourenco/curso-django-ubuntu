@@ -1,8 +1,9 @@
 from django.urls import path
 
-from pypro.base.views import home
+from pypro.base.views import home, registrar
 
 app_name = 'base'
 urlpatterns = [
     path('', home, name='home'),
+    path('contas/registrar', registrar, name='registrar'),
 ]
