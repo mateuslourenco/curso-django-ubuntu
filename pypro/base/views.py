@@ -6,4 +6,4 @@ def home(request):
 
 
 def registrar(request):
-    pass
+    return render(request, 'registration/signup.html')
