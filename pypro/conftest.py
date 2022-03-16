@@ -12,3 +12,13 @@ def usuario_logado(db, django_user_model):
 def client_com_usuario_logado(usuario_logado, client):
     client.force_login(usuario_logado)
     return client
+
+
+@pytest.fixture
+def usuario(db, django_user_model):
+    usuario_modelo = baker.make(django_user_model)
+    senha = 'senha'
+    usuario_modelo.set_password(senha)
+    usuario_modelo.save()
+    usuario_modelo.senha_plana = senha
+    return usuario_modelo

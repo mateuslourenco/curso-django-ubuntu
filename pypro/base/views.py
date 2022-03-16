@@ -12,7 +12,7 @@ def home(request):
 
 def registrar(request):
     if request.user.is_authenticated:
-        return HttpResponseRedirect(reverse('home'))
+        return HttpResponseRedirect(reverse('base:home'))
 
     if request.method == 'POST':
         form = SignUpForm(request.POST)
