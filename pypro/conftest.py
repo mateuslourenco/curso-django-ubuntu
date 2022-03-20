@@ -1,5 +1,11 @@
 import pytest
+from django.urls import reverse
 from model_bakery import baker
+
+
+@pytest.fixture
+def resp_home(db, client):
+    return client.get(reverse('base:home'))
 
 
 @pytest.fixture

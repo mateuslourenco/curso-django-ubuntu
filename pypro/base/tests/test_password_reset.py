@@ -4,6 +4,10 @@ from django.urls import reverse
 from pypro.django_assertions import assert_contains
 
 
+def test_botao_alterar_senha_presente(resp_home):
+    assert_contains(resp_home, reverse('password_change'))
+
+
 @pytest.fixture
 def resp_sem_usuario_logado(client):
     return client.get(reverse('password_change'))
