@@ -1,6 +1,8 @@
 import pytest
 from django.urls import reverse
 
+from pypro.django_assertions import assert_contains
+
 
 @pytest.fixture
 def resp_sem_usuario_logado(client):
@@ -19,3 +21,10 @@ def test_status_code_sem_usuario_logado(resp_sem_usuario_logado):
 
 def test_status_code(resp):
     assert resp.status_code == 200
+
+
+def test_campos_para_troca_presente(resp):
+    assert_contains(resp, '<h1>Digite a nova senha</h1>')
+    assert_contains(resp, 'name="old_password" ')
+    assert_contains(resp, 'name="new_password1" ')
+    assert_contains(resp, 'name="new_password2" ')
