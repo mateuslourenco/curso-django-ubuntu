@@ -1,11 +1,15 @@
 import pytest
 from django.urls import reverse
 
-from pypro.django_assertions import assert_contains
+from pypro.django_assertions import assert_contains, assert_not_contains
 
 
-def test_botao_alterar_senha_presente(resp_home):
-    assert_contains(resp_home, reverse('password_change'))
+def test_botao_alterar_senha_presente(resp_home_usuario_logado):
+    assert_contains(resp_home_usuario_logado, reverse('password_change'))
+
+
+def test_botao_alterar_senha_sem_usuario_nao_presente(resp_home_sem_usuario_logado):
+    assert_not_contains(resp_home_sem_usuario_logado, reverse('password_change'))
 
 
 @pytest.fixture
