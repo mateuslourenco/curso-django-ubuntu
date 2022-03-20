@@ -16,6 +16,12 @@ def resp(client, videos):
     return client.get(reverse('aperitivos:indice'))
 
 
+def test_aperitivos_presente_no_menu(client, db):
+    resp = client.get(reverse('base:home'))
+    assert_contains(resp, f'{reverse("aperitivos:indice")}')
+    assert_contains(resp, 'Aperitivos')
+
+
 def test_status_code(resp):
     assert resp.status_code == 200
 
