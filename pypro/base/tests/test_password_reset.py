@@ -24,7 +24,7 @@ def test_status_code(resp):
 
 
 def test_campos_para_troca_presente(resp):
-    assert_contains(resp, '<h1>Digite a nova senha</h1>')
+    assert_contains(resp, '<h1>Alterar senha</h1>')
     assert_contains(resp, 'name="old_password" ')
     assert_contains(resp, 'name="new_password1" ')
     assert_contains(resp, 'name="new_password2" ')
