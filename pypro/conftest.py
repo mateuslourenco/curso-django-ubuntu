@@ -19,7 +19,6 @@ def client_com_usuario_logado(usuario, client):
     return client
 
 
-
 @pytest.fixture
 def resp_home_usuario_logado(db, client_com_usuario_logado):
     return client_com_usuario_logado.get(reverse('base:home'))
