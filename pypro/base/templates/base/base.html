@@ -53,10 +53,15 @@
                    aria-haspopup="true" aria-expanded="false">
                     {{ user.first_name }}
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownLogado">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLogado">
+                    <div class="dropdown-item">
+                        <a class="btn btn-info" href="{% url 'password_change' %}">Alterar senha</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
                     <div class="dropdown-item">
                         <a class="btn btn-danger" href="{% url 'logout' %}">Sair</a>
                     </div>
+
                 </div>
             </li>
         </ul>
