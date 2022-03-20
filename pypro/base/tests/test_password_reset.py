@@ -102,3 +102,15 @@ def test_senha_somente_com_numeros(client_com_usuario_logado, usuario):
         }
     )
     assert_contains(resp, 'Esta senha é inteiramente numérica.')
+
+
+def test_senha_valida(client_com_usuario_logado, usuario):
+    resp = client_com_usuario_logado.post(
+        reverse('password_change'), {
+            'old_password': usuario.senha_plana,
+            'new_password1': f'{usuario.senha_plana}valida',
+            'new_password2': f'{usuario.senha_plana}valida'
+        }
+    )
+    assert resp.status_code == 302
+    assert resp.url == reverse('password_change_done')
